@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Imagenes/edificios.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <a href="notfound.html"><img src="Imagenes/edificios.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="comprar1.html">Comprar</a></li>
+                <li><a href="alquilar1.html">Alquilar</a></li>
+                <li><a href="contacto.html" class="index">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="desenfoque"></div>
+    </header>
+
+    <section class="localizacion">
+        <div class="localizaciones">
+            <h2>Localizacion</h2>
+            <p><strong>Inmobiliaria Vázquez S.L.</strong></p>
+            <p>📍 Gta. Palacio de Congresos, 1, 41020 Sevilla</p>
+            <p>📞 954 99 98 50</p>
+            <p>cinezona@cczonaeste.com</p>
+        </div>
+        <div class="cuadroUbicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.472307788588!2d-5.936637719457168!3d37.405746366161445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126f2ca805d463%3A0xc3f9c51eb10dd1a3!2sZona%20Este%2C%20Sevilla%2C%20Spain!5e0!3m2!1sen!2sus!4v1640230862429!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="contacto">
+        <h2>Contacta con nosotros</h2>
+        <form>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="texto" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="texto" id="apellido" name="apellido" required>
+            </div>
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="telefono" id="telefono" name="telefono" required>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo:</label>
+                <input type="correo" id="correo" name="correo" required>
+            </div>
+            <div class="condiciones">
+                <input type="checkbox" id="condiciones" required>
+                <label for="condiciones">Acepto las condiciones</label>
+                <button type="button" id="continuar">Continuar</button>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("condiciones").addEventListener("change", function () {
+            var botonContinuar = document.getElementById("continuar");
+            botonContinuar.style.display = this.checked ? "block" : "none";
+        });
+    </script>
+
+    <br id="avisolegal">
+
+    <div class="separator"></div>
+
+    <div class="titulo">
+        <h2>Aviso legal</h2>
+    </div>
+
+    <section class="avisoLegal-Coockies">
+        <div class="informacionLegal-informaionCoockies">
+
+            <h4>1. Datos Identificativos</h4>
+            <p>En esta sección, los datos identificativos del titular del sitio web son fundamentales para establecer la
+                transparencia y la confianza con los usuarios. El nombre del titular, su número de identificación fiscal
+                (NIF), dirección completa y dirección de correo electrónico son aspectos críticos para facilitar la
+                comunicación y establecer la responsabilidad legal. Por ejemplo, el NIF es un número único que
+                identifica a las personas físicas y jurídicas ante la Administración Tributaria en España,
+                proporcionando una identificación clara del titular del sitio. Además, la dirección de correo
+                electrónico de contacto sirve como canal directo para que los usuarios puedan plantear preguntas, hacer
+                consultas o presentar quejas sobre el sitio web.</p>
+
+            <h4>2. Usuarios</h4>
+            <p>Los usuarios de un sitio web son fundamentales para su funcionamiento y éxito. Al establecer que el
+                acceso y uso del sitio atribuyen la condición de usuario, se está delineando claramente quién está
+                sujeto a las condiciones establecidas en el documento legal. Esto incluye cualquier término, regla o
+                restricción que se mencione en estas condiciones legales. Al aceptar estas condiciones al acceder al
+                sitio, los usuarios están reconociendo su compromiso de cumplir con las normas y pautas establecidas por
+                el titular del sitio. Esto garantiza un entorno en línea ordenado y seguro para todos los que
+                interactúan con el sitio web.</p>
+
+            <h4>3. Uso del Sitio Web</h4>
+            <p>El compromiso de los usuarios de utilizar el sitio web de manera adecuada y legal es esencial para
+                mantener un entorno en línea seguro y respetuoso. Al establecer claramente que los usuarios deben evitar
+                actividades que puedan ser contrarias a la ley, la moral o el orden público, se está promoviendo una
+                conducta responsable en línea. Esto incluye el compromiso de no realizar acciones como el acceso no
+                autorizado a sistemas informáticos, el daño a la propiedad intelectual de otros usuarios o la difusión
+                de contenido ilegal o inapropiado. Esta sección es fundamental para establecer las expectativas de
+                comportamiento de los usuarios y garantizar el cumplimiento de las leyes y regulaciones aplicables.</p>
+
+            <h4>4. Protección de Datos</h4>
+            <p>La protección de datos es un tema de gran importancia en la era digital. En este apartado se establece
+                que cualquier dato personal recopilado será tratado de acuerdo con la normativa de protección de datos
+                vigente y conforme a la política de privacidad del sitio web. Esto garantiza la privacidad y seguridad
+                de los usuarios al recopilar y procesar sus datos personales. La referencia a la política de privacidad
+                proporciona a los usuarios información adicional sobre cómo se recopilan, utilizan y protegen sus datos
+                personales, lo que contribuye a generar confianza y transparencia en la gestión de la privacidad de los
+                usuarios.</p>
+
+            <h4>5. Propiedad Intelectual e Industrial</h4>
+            <p>La protección de los derechos de propiedad intelectual e industrial es esencial para salvaguardar la
+                creatividad y la innovación en el entorno digital. En este apartado, se establece claramente que todos
+                los contenidos del sitio web, incluyendo textos, imágenes, sonidos, bases de datos, código fuente y
+                cualquier otro elemento, son propiedad del titular del sitio web o de terceros que han autorizado su
+                uso. Esta afirmación refuerza la importancia de respetar y proteger los derechos de autor y las marcas
+                comerciales en línea. Además, al señalar que estos contenidos están protegidos por las leyes de
+                propiedad intelectual e industrial, se subraya la necesidad de obtener autorización antes de utilizar o
+                reproducir cualquier contenido protegido.</p>
+
+            <h4>6. Exclusión de Garantías y Responsabilidad</h4>
+            <p>La exención de responsabilidad por parte del titular del sitio web es una medida legal crucial para
+                protegerse contra posibles reclamaciones o demandas derivadas del acceso o uso del sitio. Al establecer
+                que el titular del sitio no se hace responsable de los daños o perjuicios que puedan surgir del acceso o
+                uso de la información contenida en el sitio web, se está informando a los usuarios de que estos asumen
+                cualquier riesgo relacionado con su interacción en línea. Esto incluye la no garantía de la
+                disponibilidad, precisión o seguridad de la información, lo que permite al titular del sitio web
+                protegerse contra reclamaciones de responsabilidad por daños directos o indirectos.</p>
+
+            <h4>7. Modificaciones</h4>
+            <p>La capacidad de realizar cambios en el sitio web es esencial para mantenerlo actualizado y relevante en
+                un entorno digital en constante evolución. En esta sección, se indica que el titular del sitio web se
+                reserva el derecho de realizar cambios en el sitio sin previo aviso, lo que incluye la posibilidad de
+                cambiar, eliminar o agregar contenidos y servicios, así como modificar su presentación. Esta
+                flexibilidad permite al sitio web adaptarse a las necesidades cambiantes de los usuarios y del entorno
+                digital en general. Además, al informar a los usuarios de que deben estar al tanto de posibles cambios,
+                se fomenta la transparencia y la comunicación abierta entre el titular del sitio y sus usuarios.</p>
+
+            <h4>8. Enlaces</h4>
+            <p>Los enlaces a otros sitios web pueden proporcionar a los usuarios acceso a recursos adicionales y mejorar
+                la experiencia en línea, pero también plantean ciertos riesgos legales y de seguridad. En este apartado,
+                se establece claramente que el titular del sitio web no asume responsabilidad por la información
+                contenida en los sitios enlazados, ya que no ejerce control sobre ellos. Esto significa que los usuarios
+                deben ser conscientes de los riesgos asociados con hacer clic en estos enlaces y abandonar el sitio web
+                principal. Al informar a los usuarios sobre este riesgo, se promueve una navegación segura y consciente
+                en línea.</p>
+
+            <h4>9. Derecho de Exclusión</h4>
+            <p>El derecho de exclusión es una medida que permite al titular del sitio web tomar acciones contra usuarios
+                que violen las condiciones establecidas en el documento legal. En esta sección, se establece claramente
+                que el titular del sitio se reserva el derecho de denegar o retirar el acceso al sitio web y/o los
+                servicios ofrecidos sin previo aviso a aquellos usuarios que incumplan las condiciones establecidas en
+                el documento. Esta medida es fundamental para mantener la integridad y seguridad del sitio, así como
+                para proteger a otros usuarios de posibles acciones inapropiadas por parte de individuos que no cumplen
+                con las reglas y términos establecidos.</p>
+
+            <h4>10. Generalidades</h4>
+            <p>Las disposiciones generales proporcionan una guía sobre cómo interpretar y aplicar las condiciones
+                establecidas en el documento legal. En esta sección, se establece que si alguna disposición de las
+                condiciones es considerada nula o inaplicable, se entenderá reformada en la medida necesaria para
+                hacerla válida y ejecutable. Esta disposición asegura que, en caso de que alguna parte de las
+                condiciones sea inválida, el resto del documento continúe siendo efectivo y aplicable en la medida de lo
+                posible. Además, promueve la justicia y la equidad al garantizar que las condiciones sean interpretadas
+                de manera razonable y adecuada.</p>
+
+            <h4>11. Modificaciones de las Presentes Condiciones y Duración</h4>
+            <p>El derecho del titular del sitio web a modificar las condiciones en cualquier momento es esencial para
+                adaptarse a cambios legales, tecnológicos o de otro tipo que puedan surgir con el tiempo. En esta
+                sección, se establece claramente que el titular del sitio se reserva el derecho de modificar en
+                cualquier momento las presentes condiciones, siendo debidamente publicadas como aquí aparecen. Esta
+                disposición informa a los usuarios sobre la posibilidad de cambios en las condiciones y les insta a
+                revisar regularmente los términos para estar al tanto de cualquier modificación realizada por el titular
+                del sitio. Además, garantiza la transparencia y la comunicación abierta entre el titular del sitio y sus
+                usuarios.</p>
+
+            <h4>12. Legislación Aplicable y Jurisdicción</h4>
+            <p>La legislación aplicable y la jurisdicción competente son aspectos cruciales para resolver cualquier
+                disputa legal que pueda surgir relacionada con el sitio web. En esta sección, se establece claramente
+                que las presentes condiciones se rigen por la legislación española, y que los juzgados y tribunales
+                competentes para conocer de cualquier controversia que pudiera surgir son los de la ciudad donde se
+                encuentra el titular del sitio web. Esta disposición proporciona una base legal sólida para resolver
+                cualquier disputa de manera justa y equitativa, de acuerdo con las leyes y regulaciones aplicables en el
+                lugar donde se encuentra el titular del sitio.</p>
+        </div>
+    </section>
+    <br id="coockies">
+
+    <div class="separator"></div>
+
+    <div class="titulo">
+        <h2>Coockies</h2>
+    </div>
+
+    <section class="avisoLegal-Coockies">
+        <div class="informacionLegal-informaionCoockies">
+
+            <h4>¿Qué son las cookies y para qué sirven?</h4>
+            <p>Las cookies son archivos de texto o paquetes de datos creados por las páginas web a través del navegador
+                para almacenar información sobre la visita como, por ejemplo, los datos de acceso o autentificación para
+                así no introducir el usuario y contraseña cada vez que entramos a una web. Otro ejemplo de su uso sería
+                para guardar las preferencias del idioma o también datos sobre determinados aspectos de los hábitos de
+                navegación.</p>
+
+            <p>El problema es que hay una línea muy fina entre cookies técnicas necesarios y cookies técnicas no
+                necesarias y por lo tanto la ley no es 100% clara a la hora de clasificar las cookies que se pueden
+                instalar sin el consentimiento del usuario. Por ese motivo, existen muchos sitios los cuales
+                directamente ponen un aviso y solo puedes aceptarlas, otros sitios dejan elegir qué cookies permites
+                instalar y otros sitios ni siquiera tienen aviso, como es el ejemplo de la web de Apple.</p>
+
+            <h4>¿Como debemos gestionar las cookies según el RGPD?</h4>
+            <p>Por medio de la directiva, la Unión Europea brinda una mayor protección a los datos personales de los
+                usuarios de Internet y distingue entre las cookies técnicamente necesarias y las no necesarias:</p>
+
+            <p>Cookies técnicamente necesarias: el almacenamiento de datos necesario incluye las cookies que son clave
+                para el funcionamiento de una web. Esto significa, por ejemplo, guardar los datos de inicio de sesión,
+                la cesta de la compra o la selección del idioma mediante las llamadas cookies de sesión (que se borran
+                cuando se cierra el navegador).</p>
+            <p>Cookies técnicamente no necesarias: como integrantes de este grupo se consideran los archivos de texto
+                que no solo no sirven para la funcionalidad de la página web, sino que recogen otros datos:</p>
+
+            <ul>
+                <li>Cookies de seguimiento</li>
+                <li>Cookies de segmentación</li>
+                <li>Cookies de análisis</li>
+                <li>Cookies de redes sociales</li>
+            </ul>
+
+            <p>De acuerdo con la directiva de 2009, las cookies necesarias se pueden instalar desde un principio, es
+                decir, sin el consentimiento previo del usuario (opt-out). En cambio, los visitantes de una página web
+                deben dar su consentimiento antes de que las cookies guarden datos innecesarios como pueden ser datos
+                analíticos. Por lo tanto, la directiva sobre cookies de la UE requiere una solución opt-in para las
+                cookies innecesarias.</p>
+
+            <p>Esta es la diferencia entre el opt-out y el opt-in:</p>
+
+            <ul>
+                <li>Opt-out: las cookies se instalan desde el principio, los usuarios solo pueden objetar el
+                    almacenamiento más tarde.</li>
+                <li>Opt-in: las cookies no se instalan desde el principio, solo cuando el usuario acepta el acuerdo de
+                    administración de cookies del sitio web.</li>
+            </ul>
+
+            <h4>¿Pueden afectar las cookies a los ingresos de mi web?</h4>
+            <p>Una correcta gestión y configuración de cookies tal y como lo marca actualmente la ley, puede afectar en
+                un gran porcentaje a los ingresos generados día a día por un sitio web. El motivo es simple, pongamos el
+                ejemplo en el que el usuario rechaza alguna de las cookies que no son claves para el funcionamiento de
+                la web como es el caso de las cookies que generan los botones de compartir en las redes sociales.</p>
+
+            <p>Efectivamente este tipo de botones no son 100% imprescindibles para la navegación, pero si el usuario no
+                instala las cookies relacionadas con estos, dejará de poder compartir contenido a través de estos
+                botones y es posible que veamos una reducción del número de veces que se ha compartido un artículo o
+                noticia y eso puede afectar directamente a los ingresos que genera nuestro sitio web.</p>
+
+            <h4>¿Como puedo eliminar o bloquear las cookies de mi navegador?</h4>
+
+            <p>En el caso de no desear que el sitio web instale ninguna cookie en tu equipo, cabe la posibilidad de
+                adaptar tu navegador de modo que se te notifique antes de que se descargue alguna cookie. Se puede
+                igualmente modificar la configuración del navegador de forma que rechace todas las cookies o únicamente
+                las cookies de terceros. También puedes eliminar cualquiera de las cookies que ya se encuentren en tu
+                equipo. Ten en cuenta que tendrás que adaptar por separado la configuración de cada navegador y equipo
+                que utilices.</p>
+
+            <p>A continuación tienes los enlaces donde puedes consultar las diferentes configuraciones de los
+                navegadores más populares:</p>
+
+            <ul>
+                <li>Google Chrome</li>
+                <li>Mozilla Firefox</li>
+                <li>Safari</li>
+                <li>Microsoft Edge</li>
+                <li>Internet Explorer</li>
+            </ul>
+
+            <h4>Legislación aplicable a la política de cookies</h4>
+
+            <p>La ley de cookies se encuentra contenida en el Real Decreto-ley 13/2012 de 30 de marzo de 2012, publicado
+                en el BOE el 31 de marzo de 2012 y en vigor desde el 1 de abril del mismo año (es de cumplimiento
+                obligado bajo pena de sanción). Reflejo de la Directiva europea de 2009, este decreto-ley se integra en
+                el artículo 22 de la Ley 34/2002 de 11 de julio de servicios de la sociedad de la información y de
+                comercio electrónico (LSSI) en 2014.</p>
+
+            <p>En él queda clara la necesidad de contar con la conformidad del usuario respecto al uso de sus datos
+                mediante la instalación en su terminal de dispositivos de almacenamiento, tales como cookies, y la
+                necesidad de avisar al usuario previamente. Solo se excluyen aquellas cookies necesarias para el
+                funcionamiento de la página.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footerSeccion">
+            <h3>Información de la Inmobiliaria</h3>
+            <p>Sociedad: Inmobiliaria Vázquez S.L.</p>
+            <p>Ubicación: Av. Principal 123, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Contacto: info@inmobiliariavazquez.com</p>
+        </div>
+
+        <div class="footerSeccion">
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="comprar1.html">Comprar</a></li>
+                <li><a href="alquilar1.html">Alquilar</a></li>
+                <li><a href="contacto.html" class="index">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footerSeccion">
+            <h3>Redes Sociales</h3>
+            <ul class="footerIconos">
+                <li><a href="notfound.html"><img src="Imagenes/Instagram.png" alt="Instagram"></a></li>
+                <li><a href="notfound.html"><img src="Imagenes/Facebook.png" alt="Facebook"></a></li>
+                <li><a href="notfound.html"><img src="Imagenes/X.png" alt="X"></a></li>
+            </ul>
+            <a href="contacto.html#avisolegal">Aviso legal</a>
+            <a href="contacto.html#coockies">Coockies</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

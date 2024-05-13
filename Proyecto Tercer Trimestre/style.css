@@ -1,0 +1,664 @@
+/*--------------------------------------------*/
+/* All general, body general, header general, footer general e Index */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.index {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: flex;
+    padding: 15px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+    background-color: orange;
+}
+
+.desenfoque {
+    background-color: rgb(214, 193, 193);
+    height: 10px;
+    width: 100%;
+    filter: blur(10px);
+}
+
+.imagenPrincipal {
+    background-image: url('Imagenes/Manos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.contenidoImagenPrincipal h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contenidoImagenPrincipal h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+
+.contenidoImagenPrincipal h1,
+.contenidoImagenPrincipal h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    margin-top: 50px;
+    margin-left: 180px;
+    display: flex;
+}
+
+.conocenos {
+    padding: 50px 180px;
+    display: flex;
+}
+
+.info p {
+    margin-bottom: 20px;
+}
+
+.info {
+    width: 200%;
+}
+
+.imagenEmpresa img {
+    width: 80%;
+    border-radius: 10px;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.separator {
+    background-color: #ccc;
+    height: 30px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.comprarAlquilar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.alquilar img {
+    filter: grayscale(100%);
+}
+
+
+.comprar img,
+.alquilar img {
+    width: 200px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.comprar .alquilar {
+    text-decoration: none;
+    list-style: none;
+}
+
+.comprar button,
+.alquilar button {
+    background-color: #333;
+    color: #fff;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comprar button:hover,
+.alquilar button:hover {
+    background-color: #000;
+}
+
+.nuestraEmpresa {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.imagenEmpleados img {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nuestraEmpresaTexto p {
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+.nuestraEmpresaTexto {
+    width: 51%;
+}
+
+.newsletter {
+    padding: 50px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletterInput,
+.newsletterButton {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.newsletterInput {
+    width: 270px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.newsletterButton {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletterButton:hover {
+    background-color: #000;
+}
+
+.footer {
+    background-color: #646262;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+}
+
+.footerSeccion {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footerSeccion h3 {
+    margin-bottom: 20px;
+}
+
+.footerSeccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerSeccion ul li {
+    margin-bottom: 10px;
+}
+
+.footerSeccion ul li a,
+.footerSeccion a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footerSeccion ul li a:hover,
+.footerSeccion a:hover {
+    color: #000000;
+}
+
+.footerIconos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footerIconos li {
+    margin-right: 10px;
+}
+
+.footerIconos li:last-child {
+    margin-right: 0;
+}
+
+.footerIconos a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footerIconos img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/*--------------------------------------------*/
+/* Comprar y alquilar */
+
+.tarjeta {
+    width: 365px;
+    height: 630px;
+    box-shadow: 2px 2px 4px #666666;
+    margin: 30px;
+}
+
+.imagentarjeta {
+    width: 366px;
+    height: 274px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloTarjeta {
+    margin-bottom: 30px;
+}
+
+.datos {
+    padding: 5px;
+}
+
+.datos p:first-child {
+    font-size: 22px;
+    text-align: left;
+    color: #666666;
+}
+
+.datos p {
+    font-size: 16px;
+    text-align: left;
+    color: #666666;
+}
+
+.iconos {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+}
+
+.rayaTarjeta {
+    bottom: 0;
+    border: 1px solid #504e4e;
+    margin: 20px 0;
+    opacity: 0.2;
+}
+
+.iconos p {
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.boton {
+    background-color: #504e4e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-bottom: 4px solid #000000;
+    align-self: center;
+    margin: 20px 0;
+}
+
+.boton:hover {
+    background-color: #efa53d;
+    border-bottom: 4px solid #6c4701;
+}
+
+.btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.alineador {
+    display: flex;
+    justify-content: center;
+}
+
+.pagina {
+    margin: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.anterior {
+    float: left;
+    margin-left: 130px;
+}
+
+.siguiente {
+    float: right;
+    margin-right: 130px;
+}
+
+.anterior,
+.siguiente {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.anterior:hover,
+.siguiente:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+ul.paginacion {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.paginacion li {
+    display: inline;
+}
+
+ul.paginacion li a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+ul.paginacion li a.active {
+    background-color: #ffbf57;
+    color: black;
+    transition: 0.5s;
+}
+
+ul.paginacion li a.active:hover {
+    background-color: #955500;
+    color: white;
+}
+
+/*--------------------------------------------*/
+/*  Not found */
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mensaje-error {
+    text-align: center;
+}
+
+.codigo-error {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.descripcion-error {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.enlace-error {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.enlace-error:hover {
+    background-color: #0056b3;
+}
+
+.informacion-adicional {
+    margin-top: 20px;
+}
+
+.sugerencia-error {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.lista-sugerencias-error {
+    list-style-type: none;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+}
+
+.item-sugerencia-error {
+    margin-bottom: 5px;
+}
+
+/*--------------------------------------------*/
+/*  Contacto */
+
+.localizacion {
+    padding: 50px 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuadroUbicacion {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.localizacion h2 {
+    margin-bottom: 80px;
+}
+
+.localizaciones p {
+    margin-bottom: 10px;
+    color: #646464;
+}
+
+.contacto {
+    margin: 20px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="texto"],
+input[type="telefono"],
+input[type="correo"],
+input[type="checkbox"] {
+    width: 98%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#continuar {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.avisoLegal-Coockies {
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacionLegal-informaionCoockies h4 {
+    margin-bottom: 10px;
+    color: #504e4e;
+}
+
+.informacionLegal-informaionCoockies p {
+    margin-bottom: 30px;
+    color: #8c8c8c;
+}
+
+.informacionLegal-informaionCoockies ul li {
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+.informacionLegal-informaionCoockies ul li:last-child {
+    margin-bottom: 30px;
+}
+
+/*--------------------------------------------*/
+/*  Detalle */
+
+.imagenDetalleCasa1 {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.divDetalle1 {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconoDetalle {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    color: #646464;
+}
+
+.listaDetalle ul li {
+    margin-bottom: 10px;
+    color: #646464;
+}
+
+.divDetalle2 {
+    padding: 50px 200px;
+}
+
+.divDetalle2 p,
+.divDetalle2 h2,
+.divDetalle2 li {
+    margin-bottom: 20px;
+}
+
+.divDetalle2 p,
+.divDetalle2 li {
+    color: #646464;
+}
+
+.divDetalle3 {
+    padding: 30px 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagenDetalleCasa2 {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.localizacionDetalle {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
