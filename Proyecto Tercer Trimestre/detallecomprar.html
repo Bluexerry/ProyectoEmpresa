@@ -236,8 +236,9 @@
 
     <div class="separator"></div>
 
+    
     <section class="contacto">
-        <h2>Solicita mas informacion</h2>
+        <h2>Contacta con nosotros</h2>
         <form>
             <div class="campo">
                 <label for="nombre">Nombre:</label>
@@ -258,10 +259,17 @@
             <div class="condiciones">
                 <input type="checkbox" id="condiciones" required>
                 <label for="condiciones">Acepto las condiciones</label>
-                <button type="button" id="continuar">Continuar</button>
+                <button type="button" id="continuar"><a href="notfound.html">Continuar</a></button>
             </div>
         </form>
     </section>
+
+    <script>
+        document.getElementById("condiciones").addEventListener("change", function () {
+            var botonContinuar = document.getElementById("continuar");
+            botonContinuar.style.display = this.checked ? "block" : "none";
+        });
+    </script>
 
     <footer class="footer">
         <div class="footerSeccion">
