@@ -569,6 +569,11 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
+#continuar a {
+    text-decoration: none;
+    color: white;
+}
+
 .avisoLegal-Coockies {
     padding: 50px 200px;
     display: flex;
