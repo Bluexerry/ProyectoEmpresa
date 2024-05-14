@@ -551,6 +551,10 @@ input[type="checkbox"] {
     border-radius: 5px;
 }
 
+#condiciones {
+    width: 400px;
+    position: absolute;
+}
 
 button:hover {
     background-color: #0056b3;
