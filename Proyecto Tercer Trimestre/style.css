@@ -71,7 +71,6 @@ nav ul li a:hover {
     font-size: 24px;
 }
 
-
 .contenidoImagenPrincipal h1 {
     font-size: 3em;
     margin-bottom: 10px;
@@ -81,7 +80,6 @@ nav ul li a:hover {
     font-size: 1.5em;
     margin-bottom: 40px;
 }
-
 
 .contenidoImagenPrincipal h1,
 .contenidoImagenPrincipal h2 {
@@ -118,6 +116,14 @@ nav ul li a:hover {
 .separator {
     background-color: #ccc;
     height: 30px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.miniSeparator {
+    background-color: #777777;
+    height: 10px;
     border-radius: 20px;
     width: 80%;
     margin: 0 auto;
@@ -223,25 +229,34 @@ nav ul li a:hover {
 }
 
 .footer {
-    background-color: #646262;
+    background-color: #333;
     color: #fff;
     padding: 40px 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .footerSeccion {
-    flex: 1 1 300px;
+    flex: 1 1 200px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .footerSeccion h3 {
     margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.footerSeccion p {
+    margin-bottom: 10px;
 }
 
 .footerSeccion ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footerSeccion ul li {
@@ -252,12 +267,13 @@ nav ul li a:hover {
 .footerSeccion a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .footerSeccion ul li a:hover,
 .footerSeccion a:hover {
-    color: #000000;
+    color: #ffcc00;
+    transform: scale(1.05);
 }
 
 .footerIconos {
@@ -265,25 +281,65 @@ nav ul li a:hover {
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .footerIconos li {
-    margin-right: 10px;
-}
-
-.footerIconos li:last-child {
-    margin-right: 0;
+    margin: 0;
 }
 
 .footerIconos a {
     color: #fff;
     font-size: 24px;
     text-decoration: none;
+    transition: transform 0.3s;
 }
 
 .footerIconos img {
     max-width: 40px;
     max-height: 40px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.footerIconos a:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.footerSeccion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerSeccion form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.footerSeccion form input[type="email"]:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #ffcc00;
+}
+
+.footerSeccion form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.footerSeccion form button:hover {
+    background-color: #ffaa00;
+    transform: scale(1.05);
 }
 
 /*--------------------------------------------*/
@@ -313,9 +369,10 @@ nav ul li a:hover {
 }
 
 .datos p:first-child {
-    font-size: 22px;
-    text-align: left;
+    font-size: 20px;
+    text-align: center;
     color: #666666;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .datos p {
@@ -437,7 +494,6 @@ ul.paginacion li a.active:hover {
 
 /*--------------------------------------------*/
 /*  Not found */
-
 
 .contenedor {
     display: flex;
@@ -578,29 +634,29 @@ button:hover {
     color: white;
 }
 
-.avisoLegal-Coockies {
+.infoLegal {
     padding: 50px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.informacionLegal-informaionCoockies h4 {
+.informacionLegal h4 {
     margin-bottom: 10px;
     color: #504e4e;
 }
 
-.informacionLegal-informaionCoockies p {
+.informacionLegal p {
     margin-bottom: 30px;
     color: #8c8c8c;
 }
 
-.informacionLegal-informaionCoockies ul li {
+.informacionLegal ul li {
     margin-bottom: 10px;
     color: #737373;
 }
 
-.informacionLegal-informaionCoockies ul li:last-child {
+.informacionLegal ul li:last-child {
     margin-bottom: 30px;
 }
 
@@ -636,7 +692,7 @@ button:hover {
 }
 
 .divDetalle2 {
-    padding: 50px 200px;
+    padding: 50px 250px;
 }
 
 .divDetalle2 p,
@@ -670,4 +726,87 @@ button:hover {
     padding: 50px;
     display: flex;
     justify-content: center;
+}
+
+/*--------------------------------------------*/
+/* FAQ */
+
+.contenidoCentral {
+    padding: 50px 100px;
+}
+
+.contenidoCentral .faqContenido {
+    text-align: center;
+}
+
+.faqTituloSection {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.faqContenido {
+    margin-bottom: 20px;
+}
+
+.faqContenidoPregunta {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 200px;
+    background-color: #446d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.faqContenidoPregunta:hover {
+    background-color: #446d98;
+}
+
+.faqContenidoRespuesta {
+    padding: 30px 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.faqContenidoRespuesta p {
+    color: #252525;
+    font-weight: bold;
+}
+
+.faqContenidoRespuesta ul li {
+    margin: 10px;
+    color: #666;
+}
+
+/*--------------------------------------------*/
+/* Blog */
+
+.blogMain {
+    padding: 50px 90px
+}
+
+.blogInicioPost {
+    margin-top: 30px;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.blogContenido p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #252525;
+}
+
+.blogContenido ul li {
+    margin-bottom: 20px;
+    color: #737373;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.blogContenido p:last-child {
+    margin-bottom: 50px;
 }
