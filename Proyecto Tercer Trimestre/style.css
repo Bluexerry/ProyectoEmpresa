@@ -710,7 +710,8 @@ button:hover {
     padding: 30px 220px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 .imagenDetalleCasa2 {
@@ -720,6 +721,7 @@ button:hover {
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    margin: 0px 20px;
 }
 
 .localizacionDetalle {
